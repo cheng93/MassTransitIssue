@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-MassTransitTestHarnessIssue.Worker-7807a6fd-8207-4e40-98d6-54a7c6cff580</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.5.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
+    </ItemGroup>
+</Project>

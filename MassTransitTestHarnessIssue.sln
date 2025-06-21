@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTestHarnessIssue", "MassTransitTestHarnessIssue\MassTransitTestHarnessIssue.csproj", "{2957BAC7-2C02-4635-A7B5-899954F7332B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassTransitTestHarnessIssue.Worker", "MassTransitTestHarnessIssue.Worker\MassTransitTestHarnessIssue.Worker.csproj", "{5433D187-6A0C-4001-BEFC-18EFF4FF869A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2957BAC7-2C02-4635-A7B5-899954F7332B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2957BAC7-2C02-4635-A7B5-899954F7332B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2957BAC7-2C02-4635-A7B5-899954F7332B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2957BAC7-2C02-4635-A7B5-899954F7332B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5433D187-6A0C-4001-BEFC-18EFF4FF869A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5433D187-6A0C-4001-BEFC-18EFF4FF869A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5433D187-6A0C-4001-BEFC-18EFF4FF869A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5433D187-6A0C-4001-BEFC-18EFF4FF869A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
