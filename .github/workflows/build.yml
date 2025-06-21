@@ -1,0 +1,30 @@
+name: Build
+
+on: workflow_dispatch
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - uses: actions/setup-dotnet@v3
+              with:
+                  dotnet-version: '9.x'
+
+            - run: dotnet restore
+
+            - run: dotnet build -c Release --no-restore
+
+            - run: dotnet test -c Release --no-build --logger trx --results-directory TestResults
+
+            - name: Publish test results
+              uses: phoenix-actions/test-reporting@v12
+              id: test-report
+              if: success() || failure()
+              with:
+                  name: Tests Results
+                  reporter: dotnet-trx
+                  output-to: step-summary
+                  path: '**/TestResults/*.trx'
