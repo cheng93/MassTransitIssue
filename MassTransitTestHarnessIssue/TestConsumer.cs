@@ -6,7 +6,10 @@ namespace MassTransitTestHarnessIssue;
 public class TestConsumer : IConsumer<TestMessage>
 {
     public Task Consume(ConsumeContext<TestMessage> context)
-        => Task.CompletedTask;
+    {
+        Console.WriteLine($"Consuming: {context.Message.Number}");
+        return Task.CompletedTask;
+    }
 
     public class Definition : ConsumerDefinition<TestConsumer>
     {

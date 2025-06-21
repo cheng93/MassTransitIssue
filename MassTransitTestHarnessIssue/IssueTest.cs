@@ -21,6 +21,7 @@ public class IssueTest : TestBase
             .SelectAsync(_ => { })
             .ToListAsync();
 
+        Console.WriteLine($"Issue: {string.Join(",", consumed.Select(x => x.MessageObject.As<TestMessage>().Number))}");
         consumed.Should().SatisfyRespectively(x =>
         {
             x.MessageObject.Should().BeOfType<TestMessage>()

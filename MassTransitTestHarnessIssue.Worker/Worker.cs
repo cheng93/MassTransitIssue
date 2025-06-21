@@ -14,7 +14,7 @@ public class Worker(IServiceScopeFactory serviceScopeFactory) : BackgroundServic
         {
             var endpoint = await endpointProvider.GetSendEndpoint(new Uri("exchange:foo"));
 
-            Console.WriteLine(number);
+            Console.WriteLine($"Writing {number}");
             await endpoint.Send(new TestMessage(number), stoppingToken);
         }
     }
